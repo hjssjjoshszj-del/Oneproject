@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(https://aniq.uz/photos/news/AtMGeyyAX6RaDcM.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: gold;
+}
+
+button:hover {
+    background: orange;
+}
+
+#message {
+    margin-top: 10px;
+    color: #00ffcc;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* Snow */
+.snowflake {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    color: white;
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999; /* hamma narsadan ustida */
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(120vh);
+    }
+}

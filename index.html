@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Snow -->
+    <div class="snow"></div>
+
+    <!-- Music -->
+  <audio id="music" src="/KON Jingle Bells (Instrumental).m4a" loop></audio>
+
+    <div id="fireworks"></div>
+
+    <div class="container">
+        <h1>🎄 Happy New Year 🎄</h1>
+
+        <p id="countdown"></p>
+
+        <button onclick="showMessage()">🎁 Tabrik</button>
+        <button id="musicBtn" onclick="toggleMusic()">▶️ Musiqa</button>
+        <p id="message"></p>
+
+        <hr>
+
+        <h2>🎮 Mini Game</h2>
+        <p>Ballni bos!</p>
+        <div id="ball" onclick="scorePoint()"></div>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
